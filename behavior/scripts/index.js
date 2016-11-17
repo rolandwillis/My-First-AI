@@ -32,6 +32,36 @@ exports.handle = (client) => {
       client.done()
     }
   })
+  
+  client.getEntities(client.getMessagePart(), 'opponent')
+
+// Returns
+{
+  name: [
+    {
+      value: 'dodgers',
+      raw_value: 'dodgers',
+      parsed: null
+    },
+    {
+      value: 'indians',
+      raw_value: 'indians',
+      parsed: null
+    },
+  ],
+  city: [
+    {
+      value: 'los angeles',
+      raw_value: 'los angeles',
+      parsed: null
+    },
+    {
+      value: 'cleveland',
+      raw_value: 'cleveland',
+      parsed: null
+    },
+  ],
+]
 
   client.runFlow({
     classifications: {
