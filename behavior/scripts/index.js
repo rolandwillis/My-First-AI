@@ -61,7 +61,8 @@ exports.handle = (client) => {
       parsed: null
     },
   ],
-]
+
+}
 
   client.runFlow({
     classifications: {
